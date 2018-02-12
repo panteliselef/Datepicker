@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DatePicker</title>
+    <script src="../finance/jquery.js"></script>
+    <link rel="stylesheet" href="datepicker.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyA6ba9u59An5jCqvT-mwC7AbfJPeB9ov4g",
+        authDomain: "calendar-a872e.firebaseapp.com",
+        databaseURL: "https://calendar-a872e.firebaseio.com",
+        projectId: "calendar-a872e",
+        storageBucket: "",
+        messagingSenderId: "84569716348"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  </head>
+  <body>
+    <div id="container">
+      <div id='reservation' class='warning hidden'></div>
+      <div class="heading">pick a date</div>
+      <div id="18-00">hello</div>
+      <div id="datepicker" class="picker">
+        <!-- <div class="test"><div class="day">Monday</div>12</div>
+        <div class="test"><div class="day">Tuesday</div>13</div>
+        <div class="test"><div class="day">Wednesday</div>14</div>
+        <div class="test"><div class="day">Thursday</div>15</div>
+        <div class="test"><div class="day">Friday</div>16</div> -->
+        <!-- <div class="dropdown">
+          Mon<br>1/1
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="dropdown">2</div>
+        <div class="dropdown">3</div>
+        <div class="dropdown">4</div>
+        <div class="dropdown">5</div>
+        <div class="dropdown">6</div> -->
+      </div>
+
+      <div class="heading">Pick an appoinment time</div>
+      <div id="timepicker" class="picker">
+        <!-- <div class="test time">2:00<div class="md">Pm</div></div>
+        <div class="test time">2:15<div class="md">Pm</div></div>
+        <div class="test time">2:30<div class="md">Pm</div></div>
+        <div class="test time">2:45<div class="md">Pm</div></div>
+        <div class="test time">3:00<div class="md">Pm</div></div>
+        <div class="test time">3:00<div class="md">Pm</div></div>
+        <div class="test time">3:00<div class="md">Pm</div></div>
+        <div class="test time">3:00<div class="md">Pm</div></div>
+        <div class="test time">3:00<div class="md">Pm</div></div> -->
+      </div>
+
+      <button id="btnSubmit" style="display:block" type="submit" name="button">Submit</button>
+
+    </div>
+  </body>
+  <script src="datepicker.js"></script>
+</html>

@@ -1,0 +1,150 @@
+body{
+  top: 0;
+  left: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  margin: 50px auto;
+}
+.hidden {
+  display: none;
+}
+.heading, .day, .md {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.day, .md {
+  font-weight: 500;
+  font-size: 12px;
+  color: #C4C4C4;
+  transition: all .3s;
+}
+.test {
+  min-width: 120px;
+  border: 2px solid #C6C6C6;
+  border-radius: 2px;
+  padding: 15px;
+  font-size: 3em;
+  font-weight: 300;
+}
+.time {
+  font-size: 2em;
+  padding: 15px;
+}
+.dropdown {
+  padding: 30px;
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  max-height: 150px;
+  margin-top: 32px;
+  overflow-y: scroll;
+  left: 0;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  width: 100%;
+  z-index: 1;
+  grid-template-columns: repeat(7,1fr);
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 0;
+  text-decoration: none;
+  display: block;
+}
+/* .dropdown-content a:active {
+  background-color: #f1f1f1
+}
+.dropdown:active .dropdown-content {
+  display: grid;
+}
+.dropdown:active {
+  border-bottom: 2px solid #c9c9c9;
+} */
+#container {
+  max-width: 900px;
+  margin: 100px auto;
+}
+#timepicker {
+  max-width: 900px;
+}
+.chevron {
+  font-size: 2em;
+  font-weight: 300;
+  padding: 30px 0;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: #6b6b6b;
+}
+#right_chevron {
+
+}
+.chevron:hover {
+  color: #333;
+  cursor: pointer;
+}
+.picker {
+  text-align: center;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5,1fr);
+  margin: 30px auto;
+}
+#time {
+  /* margin-top: 30px; */
+  display: grid;
+  grid-template-columns: 0.5fr 14fr 0.5fr;
+}
+.warning {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: rgba(215, 38, 61, 0.5);
+  border-left: 3px solid rgb(215, 38, 61);
+  border-radius: 3px;
+  margin: 10px auto;
+  padding: 10px;
+  width: 300px;
+}
+.picker .test {
+  transition: all .3s;
+  /* background: #f5f5f5;
+  border-right: 1px solid #c9c9c9; */
+}
+.picker .test:active,
+.picker .test:hover,
+.test-selected {
+  /* background: #c9c9c9; */
+  border: 2px solid #388697;
+  cursor: pointer;
+  border-left: 8px solid #388697;
+  /* -webkit-box-shadow: 0px 4px 9px -2px rgba(209,209,209,1);
+  -moz-box-shadow: 0px 4px 9px -2px rgba(209,209,209,1);
+  box-shadow: 0px 4px 9px -2px rgba(209,209,209,1); */
+}
+.picker .test:hover .day {
+  color: #388697;
+}
+.picker .test:last-child {
+  /* border: none; */
+}
+.picker .test.disabled {
+  color: #c9c9c9;
+}
+.picker .test.disabled:active,
+.picker .test.disabled:hover {
+  background: #f5f5f5;
+}
+button#btnSubmit {
+  border: none;
+  appearance: none;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+}
