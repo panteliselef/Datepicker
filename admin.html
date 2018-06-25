@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Admin | DatePicker</title>
+    <script src="../finance/jquery.js"></script>
+    <link rel="stylesheet" href="datepicker.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyA6ba9u59An5jCqvT-mwC7AbfJPeB9ov4g",
+        authDomain: "calendar-a872e.firebaseapp.com",
+        databaseURL: "https://calendar-a872e.firebaseio.com",
+        projectId: "calendar-a872e",
+        storageBucket: "",
+        messagingSenderId: "84569716348"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  </head>
+  <body>
+    <div id="container">
+      <div class="heading">Pick a Month</div>
+      <div id="datepicker" class="picker"></div>
+      <div id="datepicker2" class="picker"></div>
+      <div class="warning hidden">No appoinment for this month</div>
+    </div>
+  </body>
+  <script src="admin.js"></script>
+</html>
